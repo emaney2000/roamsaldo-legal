@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoamSaldo Privacy Policy</title>
+    <meta name="description" content="How RoamSaldo collects, uses, shares, and deletes your information." />
+    <link rel="icon" href="https://emaney2000.github.io/roamsaldo-legal/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Instrument+Sans:wght@400..700&display=swap" />
+    <style>
+      :root { --pine: #06251b; --pine-700: #0d4a35; --mint: #e8f3ec; --ink: #1d2320; --muted: #5a6660; --line: #dfe6e1; --card: #ffffff; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #f6f7f5; color: var(--ink); font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; }
+      header { background: var(--pine); color: #f4f1e8; padding: 28px 20px 24px; }
+      header .wrap, main, footer .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+      header h1 { font-family: "Bricolage Grotesque", system-ui, sans-serif; margin: 0 0 6px; font-size: 26px; letter-spacing: -0.01em; }
+      header p { margin: 0; color: #b9c9c0; font-size: 13px; }
+      main { padding: 28px 20px 40px; }
+      .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px 22px 8px; }
+      h2 { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-size: 17px; margin: 26px 0 8px; }
+      h2:first-of-type { margin-top: 0; }
+      p, li { font-size: 14.5px; color: #33403a; }
+      ul { padding-left: 20px; margin: 8px 0; }
+      a { color: var(--pine-700); font-weight: 600; }
+      .pill { display: inline-block; background: var(--mint); color: var(--pine-700); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px; margin-bottom: 18px; }
+      table { width: 100%; border-collapse: collapse; margin: 10px 0 4px; font-size: 14px; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+      footer { border-top: 1px solid var(--line); padding: 20px 0 40px; color: var(--muted); font-size: 13px; }
+      nav a { margin-right: 14px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>RoamSaldo Privacy Policy</h1>
+        <p>Last updated: October 9, 2026 &middot; Effective: October 9, 2026</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <span class="pill">The short version</span>
+        <p>
+          RoamSaldo is a travel budgeting and expense tracker. We collect the trip and expense data you
+          enter, your account email, and — only if you choose to link one — read-only transaction data from
+          your card through Plaid. If you buy Pro or a Trip Pass, Apple or Google processes the payment and
+          RevenueCat verifies the purchase; RoamSaldo stores the product and access period, not your
+          payment-card number. We do not sell personal information, show ads, use your financial data for
+          advertising, or track you across other apps or websites. You can export or delete your RoamSaldo
+          data from <strong>Settings</strong> in the app.
+        </p>
+
+        <h2>1. Information you provide</h2>
+        <ul>
+          <li><strong>Account:</strong> email address and a password (stored only as a salted hash by Supabase, our authentication provider).</li>
+          <li><strong>Trip data:</strong> trip name, home and local currencies, budget, dates, and the exchange rate snapshot.</li>
+          <li><strong>Expenses:</strong> amounts, categories, notes, dates, and any category corrections you make.</li>
+          <li><strong>Purchases (if you subscribe or buy a Trip Pass):</strong> store product identifier, purchase/access status, and expiry used to verify and restore card-sync access. Apple or Google processes your payment details; RoamSaldo does not receive your payment-card number.</li>
+          <li><strong>Support:</strong> anything you send us by email.</li>
+        </ul>
+        <p>
+          Trip and expense data is cached on your device so RoamSaldo works offline while you travel, and is
+          synced to your account when you are signed in.
+        </p>
+
+        <h2>Google sign-in</h2>
+        <p>
+          If you choose Sign in with Google, Google shares basic account information with our
+          authentication provider, Supabase, including your email address, Google account identifier,
+          and basic profile information such as your name and profile picture. This information is
+          used to authenticate you and associate your sign-in with your RoamSaldo account. RoamSaldo
+          does not request access to your Gmail messages, Google Drive files, contacts, or calendar.
+          Google account information is handled with your account data under the retention and deletion
+          terms below. We do not sell it or use it for advertising.
+        </p>
+
+        <h2>2. Connected financial accounts (optional)</h2>
+        <p>
+          If you link a debit or credit card, RoamSaldo uses <a href="https://plaid.com" rel="noopener">Plaid</a>
+          to make the connection and to retrieve account balances and transaction details. Plaid handles your
+          bank sign-in directly: <strong>RoamSaldo never receives or stores your bank username, password, or
+          card number.</strong> RoamSaldo stores only the Plaid access token, encrypted on our server, plus the
+          transaction details needed to show purchases in your trip (merchant name, date, amount, category).
+          You can unlink a card at any time. We request revocation of its Plaid access token and retry
+          if the provider is temporarily unavailable. Your saved transactions and previous-trip reports
+          remain in your account so your financial history is preserved. Use account deletion to remove
+          your account data.
+        </p>
+
+        <h2>3. Information collected automatically</h2>
+        <p>
+          <strong>Analytics (Android only):</strong> the Android app includes Firebase Analytics, which can
+          report app-usage events and a device/app identifier. Analytics collection is <strong>turned off by
+          default</strong> and no data is sent until it is enabled in a future release, at which point we will
+          ask for your consent where required and update this policy. The iOS app contains no analytics SDK.
+        </p>
+        <p>
+          <strong>Technical requests:</strong> like any app that talks to a server, RoamSaldo makes network
+          requests that necessarily reveal your IP address to our hosting provider.
+          We do not use this information to build advertising profiles and we do not track you across apps.
+        </p>
+
+        <p>
+          <strong>Optional notifications:</strong> if you enable alerts, we store your device's push token,
+          notification preferences, and delivery records with your account. We use Apple Push Notification
+          service on iOS and Firebase Cloud Messaging on Android to deliver budget warnings and new-trip
+          purchase alerts. You can turn alerts off in RoamSaldo or in your phone settings.
+        </p>
+
+        <h2>4. Third-party services we rely on</h2>
+        <table>
+          <thead>
+            <tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Apple Push Notification service / Firebase Cloud Messaging</td><td>Optional budget and purchase alerts</td><td>Device push token and notification content</td></tr>
+            <tr><td>Supabase</td><td>Authentication and account data storage</td><td>Email, password hash, trip and expense data, purchase entitlement and expiry</td></tr>
+            <tr><td>Plaid</td><td>Bank/card connection and transaction import</td><td>Access token, balances, transaction details</td></tr>
+            <tr><td>RevenueCat</td><td>Native purchase receipt verification, restore, and subscription lifecycle</td><td>RoamSaldo account ID, product and transaction/receipt validation data</td></tr>
+            <tr><td>Apple App Store / Google Play</td><td>In-app checkout, billing, and subscription management</td><td>Store account, payment details, product and transaction records (handled by the store)</td></tr>
+            <tr><td>Render</td><td>Application hosting (API and web app)</td><td>Request metadata, IP address, server logs</td></tr>
+            <tr><td>open.er-api.com</td><td>Exchange rates</td><td>Currency codes requested (no account data)</td></tr>
+            <tr><td>Google Fonts, flagcdn.com</td><td>Typefaces and flag images shown in the app</td><td>Standard web request data (IP, user agent)</td></tr>
+            <tr><td>Google (Firebase)</td><td>App analytics on Android — disabled by default</td><td>App-usage events, device/app identifier</td></tr>
+          </tbody>
+        </table>
+        <p>Each provider processes data under its own privacy policy and only to deliver its service to us.</p>
+
+        <h2>5. How we use information</h2>
+        <ul>
+          <li>Converting expenses between currencies and tracking your remaining budget.</li>
+          <li>Importing and categorizing card purchases when you link a card.</li>
+          <li>Verifying and restoring in-app purchases, and enabling paid card sync for the purchased period.</li>
+          <li>Syncing your trip across your devices, and restoring it when you sign back in.</li>
+          <li>Account recovery, support, and keeping the service secure (rate limiting, abuse prevention).</li>
+          <li>Improving the app — using aggregated, non-financial usage information only.</li>
+        </ul>
+
+        <h2>6. What we do not do</h2>
+        <ul>
+          <li>We do not sell or rent personal information.</li>
+          <li>We do not use connected transaction data for advertising or marketing.</li>
+          <li>We do not use or share data for cross-app or cross-site tracking.</li>
+          <li>We do not share data with data brokers or credit bureaus.</li>
+        </ul>
+
+        <h2>7. Retention and deletion</h2>
+        <p>
+          We keep your information while your account is open. You can export a readable copy of your data or
+          delete your account at any time from <strong>Settings → Account → Trip Report (PDF) / Delete Account</strong>,
+          or by requesting deletion on our
+          <a href="https://emaney2000.github.io/roamsaldo-legal/delete-account.html">account deletion page</a>.
+        </p>
+        <p>
+          Deleting your account removes your RoamSaldo account, trip settings, expenses, imported
+          transactions, and purchase entitlement rows from our live database immediately, and revokes any
+          Plaid access token so the connection stops at the provider. We delete purchase entitlement rows
+          and request deletion of the RevenueCat customer profile. RevenueCat and the app stores may retain
+          transaction records under their own terms and policies. Deleting your RoamSaldo account or
+          uninstalling the app does not cancel an auto-renewing App Store or Google Play subscription —
+          cancel it separately in the store to stop future charges. Residual copies in encrypted backups are
+          purged within <strong>90 days</strong>. We may keep minimal records (for example, a record of your
+          deletion request) where we are required to by law or need them for security and fraud-prevention purposes.
+        </p>
+
+        <h2>8. Security</h2>
+        <p>
+          Traffic is encrypted in transit with HTTPS/TLS. Plaid access tokens are encrypted at rest with
+          AES-256-GCM using a server-side key and are bound to your account so a copied token cannot be
+          replayed elsewhere. Account data is protected with row-level database policies that limit each
+          signed-in user to their own rows. No internet service can guarantee absolute security, so please
+          protect your password and your device.
+        </p>
+
+        <h2>9. Children</h2>
+        <p>
+          RoamSaldo is not directed to children. We do not knowingly collect personal information from
+          children under 13 (or under 16 in the EEA). If you believe a child has created an account, contact
+          us and we will delete it.
+        </p>
+
+        <h2>10. Your rights</h2>
+        <p>
+          Depending on where you live, you may have the right to access, correct, export, or delete your
+          personal information, and to object to or restrict certain processing. RoamSaldo provides export
+          and deletion directly in the app; for anything else, email us and we will respond within
+          30 days. We do not discriminate against anyone for exercising these rights.
+        </p>
+
+        <h2>11. Changes to this policy</h2>
+        <p>
+          If we materially change this policy we will update the date above and, where appropriate, notify
+          you in the app. Continuing to use RoamSaldo after a change means the updated policy applies.
+        </p>
+
+        <h2>12. Contact</h2>
+        <p>
+          Privacy questions and data requests: <a href="mailto:roamsaldo.admin@gmail.com">roamsaldo.admin@gmail.com</a>.
+          See also our <a href="https://emaney2000.github.io/roamsaldo-legal/terms.html">Terms of Service</a> and <a href="https://emaney2000.github.io/roamsaldo-legal/support.html">Help &amp; Support</a>.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <nav>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/privacy.html">Privacy</a>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/terms.html">Terms</a>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/support.html">Support</a>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/delete-account.html">Delete account</a>
+        </nav>
+        <p>RoamSaldo — travel money &amp; expense tracking.</p>
+      </div>
+    </footer>
+  </body>
+</html>
