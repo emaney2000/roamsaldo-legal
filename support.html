@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RoamSaldo Help &amp; Support</title>
+    <meta name="description" content="Get help with RoamSaldo: account, card connections, exchange rates, and account deletion." />
+    <link rel="icon" href="https://emaney2000.github.io/roamsaldo-legal/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Instrument+Sans:wght@400..700&display=swap" />
+    <style>
+      :root { --pine: #06251b; --pine-700: #0d4a35; --mint: #e8f3ec; --ink: #1d2320; --muted: #5a6660; --line: #dfe6e1; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: #f6f7f5; color: var(--ink); font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65; }
+      header { background: var(--pine); color: #f4f1e8; padding: 28px 20px 24px; }
+      header .wrap, main, footer .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+      header h1 { font-family: "Bricolage Grotesque", system-ui, sans-serif; margin: 0 0 6px; font-size: 26px; letter-spacing: -0.01em; }
+      header p { margin: 0; color: #b9c9c0; font-size: 13px; }
+      main { padding: 28px 20px 40px; }
+      .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px 10px; margin-bottom: 18px; }
+      h2 { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-size: 17px; margin: 24px 0 8px; }
+      h2:first-of-type { margin-top: 0; }
+      p, li { font-size: 14.5px; color: #33403a; }
+      ul, ol { padding-left: 20px; margin: 8px 0; }
+      a { color: var(--pine-700); font-weight: 600; }
+      .contact { background: var(--pine); color: #f4f1e8; border-radius: 16px; padding: 20px 22px; margin-bottom: 18px; }
+      .contact a { color: #efb23a; }
+      .contact p { color: #d5e2da; }
+      .pill { display: inline-block; background: var(--mint); color: var(--pine-700); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 999px; margin-bottom: 14px; }
+      footer { border-top: 1px solid var(--line); padding: 20px 0 40px; color: var(--muted); font-size: 13px; }
+      nav a { margin-right: 14px; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>RoamSaldo Help &amp; Support</h1>
+        <p>Updated: September 28, 2026</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact">
+        <span class="pill" style="background:#12412f;color:#cfe3d6">Contact us</span>
+        <p style="margin:0">
+          Email: <a href="mailto:roamsaldo.admin@gmail.com">roamsaldo.admin@gmail.com</a><br />
+          We aim to reply within 2 business days.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>What to include in a bug report</h2>
+        <ul>
+          <li>Your device platform and OS version (iPhone, Android, or web browser).</li>
+          <li>The app version shown in Settings.</li>
+          <li>What you did, what you expected, and what happened instead.</li>
+          <li>The time it happened (so we can find it in our logs).</li>
+        </ul>
+        <p>
+          <strong>Never send passwords, bank credentials, Plaid access tokens, or full card numbers by
+          email.</strong> We will never ask you for them.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Delete your account</h2>
+        <p>
+          Open <strong>Settings → Data &amp; Account → Delete account</strong> in the app and confirm. This
+          removes your RoamSaldo account, your trip and expense data, and any imported transactions, and it
+          revokes your card connection at Plaid so the connection stops there too.
+        </p>
+        <p>
+          If you no longer have the app installed, you can still request deletion from the web — see
+          <a href="https://emaney2000.github.io/roamsaldo-legal/delete-account.html">Delete your RoamSaldo account</a>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Export your data</h2>
+        <p>
+          <strong>Settings → Data &amp; Account → Export</strong> produces a readable PDF of the selected trip
+          with every expense, plus a machine-readable export of your account data. You can share or save it
+          from the share sheet.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Card connection problems</h2>
+        <ol>
+          <li>Confirm you are online and signed in, then try connecting again.</li>
+          <li>If a card stays linked after an interrupted setup, use <strong>Settings → Card you'll use → Change</strong> or unlink it and reconnect.</li>
+          <li>If your bank needs extra verification, complete it in the bank's own screen — RoamSaldo never sees that step.</li>
+          <li>If purchases are missing, wait a few minutes: banks can take time to report a transaction, and pending amounts change when they settle.</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h2>Exchange rates look wrong or stale</h2>
+        <p>
+          RoamSaldo uses live rates when it can reach its rate provider, and falls back to the last cached
+          rates (or an approximate table) when you are offline. Pull to refresh on the Convert tab, or save a
+          rate from <strong>Settings → Trip</strong> to pin one for the whole trip.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Sign-in and email confirmation</h2>
+        <p>
+          Confirmation and password-reset emails come from our authentication provider. If one does not
+          arrive, check your spam folder and wait a few minutes before requesting another — mail providers
+          limit how quickly we can send them. Tapping the link opens RoamSaldo and signs you in; on a phone
+          browser it hands off to the installed app.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Legal</h2>
+        <p>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/privacy.html">Privacy Policy</a> &middot;
+          <a href="https://emaney2000.github.io/roamsaldo-legal/terms.html">Terms of Service</a>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <nav>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/privacy.html">Privacy</a>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/terms.html">Terms</a>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/support.html">Support</a>
+          <a href="https://emaney2000.github.io/roamsaldo-legal/delete-account.html">Delete account</a>
+        </nav>
+        <p>RoamSaldo — travel money &amp; expense tracking.</p>
+      </div>
+    </footer>
+  </body>
+</html>
